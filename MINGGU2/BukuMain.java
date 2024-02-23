@@ -17,7 +17,7 @@ public class BukuMain {
         bk2.tampilInformasi();
 
         Buku05 Beryl_Funky_Mubarok = new Buku05("I Wanna Be A Better Person", "Beryl Funky Mubarok", 50, 5, 50000);
+        Beryl_Funky_Mubarok.terjual(5);
         Beryl_Funky_Mubarok.tampilInformasi();
-        Beryl_Funky_Mubarok.terjual(6);
     }
 }
