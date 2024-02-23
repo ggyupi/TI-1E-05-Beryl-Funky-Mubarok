@@ -8,7 +8,7 @@ class Buku05{
     System.out.println("Jumlah halaman: " + halaman);
     if (stok==0) System.out.println("stok habis");
     else System.out.println("Sisa stok : " + stok);
-    System.out.println("Harga: Rp " + harga);
+    System.out.println("Harga satuan : Rp " + harga);
     System.out.println("Harga yang harus dibayar stelah diskon : " + total);
  }
  void terjual(int jml){
@@ -38,13 +38,18 @@ class Buku05{
    hargaTotal = harga * jml;
    diskon(hargaTotal);
  }
- void diskon(int hargaTotal){
+ void diskon(int hargaTotal){ 
+   double diskon= 0;
    if (hargaTotal > 150000){
-      hargaTotal *= 0.12;
+      diskon = hargaTotal* 0.12;
+      total = (int) (hargaTotal - diskon);
    }else if (hargaTotal>75000 && hargaTotal<150000){
-      hargaTotal *= 0.05;
+      diskon = hargaTotal* 0.05;
+      total = (int) (hargaTotal - diskon);
+   } else {
+      total = hargaTotal;
+
    }
-   total = hargaTotal;
  }
 
  }
