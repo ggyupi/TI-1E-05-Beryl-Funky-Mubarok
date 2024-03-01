@@ -1,3 +1,5 @@
+package ArrayOfObjects;
+
 class Mahasiswa {
     String nama;
     int usia;
