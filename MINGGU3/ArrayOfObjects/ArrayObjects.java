@@ -1,3 +1,5 @@
+package ArrayOfObjects;
+
 import java.util.Scanner;
 public class ArrayObjects {
      public static void main(String[] args) {
@@ -20,7 +22,3 @@ public class ArrayObjects {
 
      }
 }
-class Persegipanjang {
-     public int panjang;
-     public int lebar;
- }
