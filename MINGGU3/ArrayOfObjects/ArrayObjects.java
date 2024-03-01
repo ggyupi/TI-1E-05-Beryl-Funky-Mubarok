@@ -19,6 +19,6 @@ public class ArrayObjects {
                System.out.println("Persegi panjang ke-"+i);
                System.out.println("panjang: " +ppArray[i].panjang + ", lebar: " + ppArray[i].lebar);
           }
-
+          sc.close();
      }
 }
