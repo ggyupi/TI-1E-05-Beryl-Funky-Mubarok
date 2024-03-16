@@ -14,8 +14,8 @@ public class perulangan {
         if (n<10){
             n+=10;
         } System.out.println("n : " + n);
-        long i=0;
-        for (i=1; i<=n; i++) {
+        // long i=0;
+        for (long i=1; i<=n; i++) {
             if(i == 6 || i == 10){
                 continue;
             }if(i%2 !=0){
