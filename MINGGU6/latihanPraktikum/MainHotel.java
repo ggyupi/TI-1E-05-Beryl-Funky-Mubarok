@@ -19,6 +19,10 @@ public class MainHotel {
         list.tambah(H3);
         list.tambah(H4);
         list.tambah(H5);
+
+        System.out.println("Data penginapan sebelum sorting = ");
+        list.tampil();
+
         while(true){
 
             String garis = "------------------------";
@@ -29,13 +33,21 @@ public class MainHotel {
         int nomor = sc.nextInt();
         switch (nomor) {
             case 1:
-            System.out.println("Berikut adalah daftar dari penginapan dari harga tertinggi hingga terendah = ");
-            list.bubbleSort();
+            System.out.println("Berikut adalah daftar dari penginapan dari hingga termurah = ");
+            System.out.println("---> sorting harga berdasarkan bubblesort");
+            list.bubbleSortHarga();
+            list.tampil();
+            System.out.println("---> sorting harga berdasarkan selectionsort");
+            list.selectionSortHarga();
             list.tampil();
             break;
             case 2:
             System.out.println("Berikut adalah daftar dari penginapan dari rating tertinggi hingga terendah = ");
-            list.selectionSort();;
+            System.out.println("---> sorting rating berdasarkan brute force");
+            list.bubbleSortRating();
+            list.tampil();
+            System.out.println("---> sorting rating berdasarkan selectionsort");
+            list.selectionSortRating();
             list.tampil();
             break;
             
