@@ -6,8 +6,9 @@ import java.util.Scanner;
 public class Utama05 {
 
     public static void main(String[] args) {
-        Gudang05 gudang = new Gudang05(7);
-        Scanner scanner = new Scanner(System.in); 
+        Scanner sc05 = new Scanner(System.in);
+        System.out.print("Masukkan jumlah kapasitas gudang : ");
+        Gudang05 gudang = new Gudang05(Integer.parseInt(sc05.nextLine()));
 
         while (true) {
             System.out.println("\nMenu:");
@@ -17,18 +18,18 @@ public class Utama05 {
             System.out.println("4. lihat barang teratas");
             System.out.println("5. Keluar");
             System.out.print("Pilih operasi: ");
-            int pilihan = scanner.nextInt();
-            scanner.nextLine(); 
+            int pilihan = sc05.nextInt();
+            sc05.nextLine(); 
 
             switch (pilihan) {
                 case 1:
                     System.out.print("Masukkan kode barang:");
-                    int kode = scanner.nextInt();
-                    scanner.nextLine(); 
+                    int kode = sc05.nextInt();
+                    sc05.nextLine(); 
                     System.out.print("Masukkan nama barang:");
-                    String nama = scanner.nextLine();
+                    String nama = sc05.nextLine();
                     System.out.print("Masukkan nama kategori:");
-                    String kategori = scanner.nextLine();
+                    String kategori = sc05.nextLine();
                     Barang05 barangBaru = new Barang05(kode, nama, kategori);
                     gudang.tambahBarang(barangBaru);
                     break;
